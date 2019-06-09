@@ -2,6 +2,7 @@ from collections import defaultdict
 from pandas import read_table
 import numpy as np
 import math
+
 #머신러닝
 class NaiveBayesClassifier:
 

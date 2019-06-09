@@ -1,6 +1,7 @@
 from tweepy import Stream
 from tweepy import OAuthHandler
 from tweepy.streaming import StreamListener
+from trade import *
 import time
 from train import model
 from key import *
@@ -24,7 +25,13 @@ class listener(StreamListener):
         if from_creator(status):
             try:
                 # Prints out the tweet
-                print(status.text, model.classify(status.text))
+                if model.classify(status.text) > 0.7:
+                    buy()
+                    print(status.text)
+                    def swi(swi):
+                        swi =0
+                        return swi
+
                 time.sleep(2)
                 return True
             except BaseException as e:
