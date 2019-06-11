@@ -113,13 +113,14 @@ def buy():
     print(ret)
     cur = msg_cur
     while True:
+        find()
         if cur*0.95 > msg_cur:
             sell()
             break
-        elif cur*1.05 <msg_cur:
+        elif cur*1.05 < msg_cur:
             sell()
             break
-        time.sleep(2)
+        time.sleep(1)
 
 
 def sell():
