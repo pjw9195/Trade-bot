@@ -39,6 +39,8 @@ class listener(StreamListener):
         if from_creator(status):
             try:
                 # Prints out the tweet
+                # parse를 통해 twitter에서 바로 받아온 데이터를 전처리
+                # 이유? 학습된 데이터 단어들도 전처리 과정을 진행하였기 때문에 전처리를 하지 않고 바로 문장을 판별한다면 오차범위가 커짐
                 parse = re.sub('https?://\S+','',status.text)
                 parse = re.sub('#\S+','',parse)
                 if model.classify(status.text) > 0.7:
@@ -117,7 +119,7 @@ def buy():
         if cur*0.95 > msg_cur:
             sell()
             break
-        elif cur*1.05 < msg_cur:
+        elif cur*1.05 <msg_cur:  
             sell()
             break
         time.sleep(1)
