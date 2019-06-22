@@ -1,0 +1,401 @@
+@import url(//fonts.googleapis.com/earlyaccess/jejugothic.css);
+
+* {
+  font-family: 'Jeju Gothic', sans-serif;
+}
+
+#info {
+  font-size: 1.01em;
+}
+
+.main_background_with_img {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  overflow: hidden;
+}
+
+.main_background-black {
+  background-color: rgba(0, 0, 0, 0.57);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: hidden;
+  display: flex;
+}
+
+.searchbar {
+  align-self: center;
+}
+
+#main_typed {
+  font-size: 3.2em;
+}
+
+.typed-cursor {
+  opacity: 1;
+}
+
+.main-univ_search .typed-cursor {
+  font-size: 3em;
+  color: white;
+}
+
+/* Nav bar */
+#header {
+  padding: 20px 0;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  transition: all 0.5s;
+  z-index: 997;
+}
+
+.swiper-container {
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  z-index: 1;
+}
+
+/* Header logo */
+#header #logo {
+  float: left;
+  margin: 2%;
+}
+
+#header #logo h1 a,
+#header #logo h1 a:hover {
+  color: #fff;
+  padding-left: 10px;
+}
+
+#header #logo img {
+  padding: 0;
+  margin: 0;
+}
+
+#header #logo h1 {
+  font-size: 34px;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  letter-spacing: 3px;
+}
+
+#damda {
+  height: 80px;
+  filter: brightness(130%);
+}
+
+#nav-menu-container {
+  float: right;
+  margin: 0;
+}
+
+.sf-arrows {
+  content: '\f107';
+  position: absolute;
+  right: 15px;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  padding-right: 30px;
+}
+
+.nav-menu,
+.nav-menu * {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-menu-list {
+  color: white !important;
+  font-size: 1.2em;
+}
+
+/* Arrow */
+.one-page-arrow {
+  position: absolute;
+  z-index: 3;
+  bottom: 20px;
+  left: 50%;
+  margin-left: -16px;
+  width: 38px;
+  height: 38px;
+  font-size: 38px;
+  text-align: center;
+  color: white;
+}
+
+/* Content area */
+body {
+  background-color: #f6f6f7 !important;
+}
+
+.filter-wrapper {
+  background-color: #fff;
+  box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.03);
+  padding: 20px;
+  margin-bottom: 16px;
+}
+
+.filter-wrapper .filter {
+  text-align: left;
+  list-style: none;
+  padding-top: 15px;
+}
+
+#form_date_range {
+  background: transparent;
+  cursor: pointer;
+}
+
+.filter-wrapper form .btn-group:first-child {
+  margin-left: 0 !important;
+}
+
+.card {
+  text-align: center;
+  background-color: transparent !important;
+  border: none !important;
+}
+
+.card__body {
+  border-radius: 5px;
+  transition: 0.35s ease-out;
+  border: 1px solid #f0f0f0;
+  background-color: #fff;
+  box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.03);
+}
+
+/* Card 상단 */
+.card__action {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 28px;
+  margin-right: -4px;
+  margin-left: -4px;
+}
+
+.card__action--left {
+  left: 28px;
+}
+
+.card__action--right {
+  right: 28px;
+}
+
+.card .rounded-item {
+  width: 22px;
+  height: 22px;
+  border-radius: 19px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reminder {
+  font-size: 16px;
+}
+
+/* Card icon */
+.card__logo-item,
+.card__logo-wrapper {
+  height: 28px;
+  width: 28px;
+}
+
+.card__logo-wrapper {
+  margin: 8px auto;
+  overflow: hidden;
+}
+
+.icon-sm {
+  height: 28px;
+}
+
+.responsive-height {
+  max-height: 100%;
+  width: auto;
+}
+
+.logo {
+  border-radius: 5px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Card icon describe */
+.card__coins {
+  color: #7988ad;
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.card__coins a {
+  color: #4abce6;
+  transition: all 0.125s ease-in-out 0s;
+}
+
+.card__date {
+  color: #3d89ce;
+  font-weight: 400;
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+
+.card .link-detail .card__title {
+  vertical-align: middle;
+  padding: 0 5px;
+}
+
+.card__title {
+  color: #345485;
+  font-weight: 400;
+  font-size: 1.1rem;
+  margin-top: 0;
+}
+
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: block;
+}
+
+.card__description {
+  color: #666;
+  width: 100%;
+  height: 16ex;
+  margin-bottom: 10px;
+  margin-top: 4px;
+  padding: 0 10px;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+  display: -moz-box;
+  -moz-box-orient: horizontal;
+  -moz-box-pack: center;
+  -moz-box-align: center;
+  display: box;
+  box-orient: horizontal;
+  box-pack: center;
+  box-align: center;
+}
+
+.btn-color-link {
+  border-color: #4abce6 !important;
+  color: #4abce6 !important;
+}
+
+.progress,
+.progress-bar {
+  height: 2px;
+  position: relative;
+}
+
+.progress {
+  overflow: visible;
+  border-radius: 1px;
+  margin: 30px 15px 15px;
+}
+
+.btn,
+.form-control,
+.form-control:focus,
+.form-control:hover,
+.navbar-custom .dropdown-menu,
+.panel,
+.progress,
+.well {
+  box-shadow: none;
+}
+
+.progress__votes {
+  position: absolute;
+  right: 0;
+  top: -17px;
+  color: #666;
+}
+
+.progress-bar {
+  background: #4abce6;
+  border-radius: 5px;
+  box-shadow: none;
+}
+
+.progress,
+.progress-bar {
+  height: 2px;
+  position: relative;
+}
+
+.progress__percent {
+  position: absolute;
+  text-align: left;
+  left: 0;
+  top: -17px;
+  opacity: 0;
+  line-height: 12px;
+  color: #666;
+  padding: 4px 0;
+  width: 40px;
+}
+
+.progress__percent:after {
+  display: inline-block;
+  content: '%';
+}
+
+.btn.btn-background-g {
+  background: #f4f6f7;
+  color: #8f9499 !important;
+}
+
+.tip {
+  color: #8f9499;
+  height: 55px;
+  background-color: #f8f8f8;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 10px 0;
+  margin-top: 12px;
+}
+
+.card .added-date {
+  padding-bottom: 0;
+  font-size: 0.875rem;
+  color: #8f9499;
+  font-weight: 700;
+}
+
+.added-date {
+  font-size: 14px;
+  margin-top: 0;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+#event-detail .tip__bottom,
+.tip__top {
+  font-size: 0.875rem;
+}
+
+.tip__top a {
+  color: #4abce6;
+  cursor: pointer;
+}
